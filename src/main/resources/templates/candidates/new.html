@@ -22,6 +22,7 @@
               type="text"
               class="form-control"
               placeholder="Name"
+              id="name"
               required
             />
           </div>
@@ -32,6 +33,7 @@
               class="form-control"
               placeholder="ID number"
               th:field="*{bi}"
+              id="bi"
               required
             />
           </div>
@@ -45,6 +47,7 @@
               class="form-control"
               th:field="*{address}"
               placeholder="Address"
+              id="address"
               required
             />
           </div>
@@ -55,6 +58,7 @@
               class="form-control"
               type="date"
               th:field="*{birth}"
+              id="birth"
               required
             />
           </div>
@@ -68,6 +72,7 @@
               class="form-control"
               placeholder="nome@examplo.com"
               th:field="*{email}"
+              id="email"
             />
           </div>
 
@@ -78,6 +83,7 @@
               class="form-control"
               placeholder="Phone"
               th:field="*{phone}"
+              id="phone"
             />
           </div>
         </div>
@@ -90,6 +96,7 @@
               class="form-control"
               placeholder="Technical area"
               th:field="*{technicalArea}"
+              id="technicalArea"
             />
           </div>
           <div class="col-sm-2">
@@ -101,6 +108,7 @@
               min="0"
               max="10"
               value="0"
+              id="rating"
             />
           </div>
 
@@ -110,13 +118,14 @@
               type="date"
               class="form-control"
               th:field="*{jobInterviewDate}"
+              id="jobInterviewDate"
             />
           </div>
         </div>
 
         <div class="row mb-3">
           <div class="col-auto">
-            <button class="btn btn-primary" type="submit">
+            <button class="btn btn-primary" type="submit" id="save">
               Save candidate
             </button>
           </div>
